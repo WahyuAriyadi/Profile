@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wahyu Ariyadi — Cloud &amp; DevOps Engineer</title>
+<meta name="description" content="Portfolio of Wahyu Ariyadi — Cloud &amp; DevOps Engineer and AI/ML enthusiast. Fresh graduate in Informatics Engineering, UNS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="index">
+
+  <!-- ============ DESKTOP SIDEBAR NAV ============ -->
+  <nav class="pipeline-nav" aria-label="Section navigation">
+    <a class="nav-brand" href="index.html"><span class="dot"></span> wahyu<span class="mono" style="color:var(--text-mute)">.deploy</span></a>
+    <ul class="nav-stages" id="navStages">
+      <div class="track"></div>
+      <div class="track-fill" id="trackFill"></div>
+      <li data-target="skills"><a href="skills.html"><span class="node"></span><span>~/skills</span></a></li>
+      <li data-target="projects"><a href="projects.html"><span class="node"></span><span>~/projects</span></a></li>
+      <li data-target="certifications"><a href="certifications.html"><span class="node"></span><span>~/certs</span></a></li>
+      <li data-target="contact"><a href="contact.html"><span class="node"></span><span>~/contact</span></a></li>
+    </ul>
+    <a class="nav-cta" href="contact.html">Get in touch →</a>
+  </nav>
+
+  <!-- ============ MOBILE TOP BAR ============ -->
+  <div class="mobile-bar">
+    <a class="nav-brand" href="index.html"><span class="dot"></span> wahyu.deploy</a>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-progress" id="mobileProgress"></div>
+
+  <div class="mobile-overlay" id="mobileOverlay">
+    <ul id="mobileStages">
+      <li class="home-item"><a href="index.html"><span class="node"></span>~/home</a></li>
+      <li data-target="skills"><a href="skills.html"><span class="node"></span>~/skills</a></li>
+      <li data-target="projects"><a href="projects.html"><span class="node"></span>~/projects</a></li>
+      <li data-target="certifications"><a href="certifications.html"><span class="node"></span>~/certs</a></li>
+      <li data-target="contact"><a href="contact.html"><span class="node"></span>~/contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="terminal">
+          <div class="terminal-head"><span></span><span></span><span></span></div>
+          <div class="terminal-body" id="terminalBody"></div>
+        </div>
+        <h1 class="hero-name" id="heroName">Wahyu Ariyadi <span class="accent">.</span></h1>
+        <p class="hero-tagline" id="heroTagline">Cloud &amp; DevOps Engineer building reliable, low-cost infrastructure — with an AI/ML edge. Fresh graduate ready to ship.</p>
+        <div class="hero-cta" id="heroCta">
+          <a class="btn btn-primary" href="projects.html">
+            View Projects
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-outline" href="https://drive.google.com/file/d/1XT6VX0R2ac3Sok4vpwoUoUvRlZqza7V4/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              Download CV
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OVERVIEW (About + Background) ============ -->
+    <section id="overview">
+      <div class="eyebrow">Profile Overview</div>
+      <h2 class="section-title reveal">Backend roots, cloud focus, AI curiosity</h2>
+      <p class="section-sub reveal">The short version of how I got here — and what I'm building toward. Skills, projects, certifications and contact details each live on their own page, linked below.</p>
+      <div class="about-grid">
+        <div class="reveal">
+          <p>I'm a fresh graduate in <strong>Informatics Engineering from Universitas Sebelas Maret (UNS)</strong>, finishing with a 3.65/4.0 GPA. My path combined backend development, cloud infrastructure, and applied NLP rather than picking just one lane.</p>
+          <p>I trained through <strong>Bangkit Academy's Cloud Computing Path</strong> (graduated with distinction) and <strong>AWS re/Start</strong>, and hold both AWS and Google Cloud certifications. As part of Bangkit, I led a cross-functional team building <strong>VoyageEducation</strong>, a career-recommendation app deployed on GCP Cloud Run.</p>
+          <p>My thesis applied <strong>IndoBERT and BiLSTM</strong> to aspect-based sentiment analysis on Indonesian bank reviews — a low-resource NLP problem close to home. These days I'm building infrastructure that's genuinely useful for small Indonesian businesses, including a Terraform module inspired by my own family's food stall.</p>
+        </div>
+        <dl class="facts reveal">
+          <dt>Location</dt>
+          <dd>Indonesia · open to remote / hybrid</dd>
+          <dt>Education</dt>
+          <dd>B.Eng, Informatics Engineering — UNS, 2026</dd>
+          <dt>Focus areas</dt>
+          <dd>Cloud &amp; DevOps · Backend Systems · AI/ML</dd>
+          <dt>Status</dt>
+          <dd>Actively seeking full-time opportunities</dd>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ EXPLORE (links to the other pages) ============ -->
+    <section id="explore">
+      <div class="eyebrow">Explore</div>
+      <h2 class="section-title reveal">Dig into the details</h2>
+      <p class="section-sub reveal">Each area of the pipeline lives on its own page.</p>
+      <div class="explore-grid">
+        <a class="explore-card reveal" href="skills.html">
+          <div class="tag">01 · Stack</div>
+          <h3>Skills</h3>
+          <p>Cloud, backend, AI/ML and tooling — laid out layer by layer.</p>
+          <span class="go">View skills <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="explore-card reveal" href="projects.html">
+          <div class="tag">02 · Work</div>
+          <h3>Projects</h3>
+          <p>Six projects shipped end-to-end, solo or leading a small team.</p>
+          <span class="go">View projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="explore-card reveal" href="certifications.html">
+          <div class="tag">03 · Credentials</div>
+          <h3>Certifications</h3>
+          <p>AWS, Google Cloud, and Bangkit Academy training.</p>
+          <span class="go">View certs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="explore-card reveal" href="contact.html">
+          <div class="tag">04 · Get in touch</div>
+          <h3>Contact</h3>
+          <p>Email, LinkedIn and GitHub — open to remote &amp; hybrid roles.</p>
+          <span class="go">Contact me <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <span>© 2026 Wahyu Ariyadi.</span>
+      <span>Built with HTML, CSS &amp; vanilla JS — no frameworks, fully static.</span>
+    </footer>
+  </main>
+
+<script src="script.js" defer></script>
+</body>
+</html>

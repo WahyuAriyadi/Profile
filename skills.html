@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills — Wahyu Ariyadi</title>
+<meta name="description" content="Cloud, backend, and AI/ML skills of Wahyu Ariyadi, Cloud &amp; DevOps Engineer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="skills">
+
+  <nav class="pipeline-nav" aria-label="Section navigation">
+    <a class="nav-brand" href="index.html"><span class="dot"></span> wahyu<span class="mono" style="color:var(--text-mute)">.deploy</span></a>
+    <ul class="nav-stages" id="navStages">
+      <div class="track"></div>
+      <div class="track-fill" id="trackFill"></div>
+      <li data-target="skills"><a href="skills.html"><span class="node"></span><span>~/skills</span></a></li>
+      <li data-target="projects"><a href="projects.html"><span class="node"></span><span>~/projects</span></a></li>
+      <li data-target="certifications"><a href="certifications.html"><span class="node"></span><span>~/certs</span></a></li>
+      <li data-target="contact"><a href="contact.html"><span class="node"></span><span>~/contact</span></a></li>
+    </ul>
+    <a class="nav-cta" href="contact.html">Get in touch →</a>
+  </nav>
+
+  <div class="mobile-bar">
+    <a class="nav-brand" href="index.html"><span class="dot"></span> wahyu.deploy</a>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-progress" id="mobileProgress"></div>
+
+  <div class="mobile-overlay" id="mobileOverlay">
+    <ul id="mobileStages">
+      <li class="home-item"><a href="index.html"><span class="node"></span>~/home</a></li>
+      <li data-target="skills"><a href="skills.html"><span class="node"></span>~/skills</a></li>
+      <li data-target="projects"><a href="projects.html"><span class="node"></span>~/projects</a></li>
+      <li data-target="certifications"><a href="certifications.html"><span class="node"></span>~/certs</a></li>
+      <li data-target="contact"><a href="contact.html"><span class="node"></span>~/contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <section id="skills">
+      <div class="eyebrow">01 · Skills</div>
+      <h2 class="section-title reveal">The stack, layer by layer</h2>
+      <p class="section-sub reveal">Read top to bottom, like a deploy manifest — from raw infrastructure up to the interfaces people actually touch.</p>
+      <div class="stack">
+        <div class="stack-layer reveal">
+          <div class="layer-label">Infrastructure<small>Cloud &amp; provisioning</small></div>
+          <div class="chips">
+            <span class="chip">AWS</span><span class="chip">Google Cloud Platform</span><span class="chip">Terraform</span><span class="chip">Cloud Run</span><span class="chip">CI/CD</span>
+          </div>
+        </div>
+        <div class="stack-layer reveal">
+          <div class="layer-label">Service &amp; Backend<small>APIs &amp; concurrency</small></div>
+          <div class="chips">
+            <span class="chip">Go</span><span class="chip">REST API Design</span><span class="chip">Actor Pattern</span><span class="chip">Goroutines</span>
+          </div>
+        </div>
+        <div class="stack-layer reveal">
+          <div class="layer-label">Intelligence<small>AI / ML / NLP</small></div>
+          <div class="chips">
+            <span class="chip">Python</span><span class="chip">IndoBERT</span><span class="chip">BiLSTM</span><span class="chip">Aspect-Based Sentiment Analysis</span>
+          </div>
+        </div>
+        <div class="stack-layer reveal">
+          <div class="layer-label">Application<small>Frontend</small></div>
+          <div class="chips">
+            <span class="chip">Vue.js 3</span><span class="chip">Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="stack-layer reveal">
+          <div class="layer-label">Tooling &amp; Ops<small>Day-to-day</small></div>
+          <div class="chips">
+            <span class="chip">Git</span><span class="chip">Linux</span><span class="chip">PowerShell</span><span class="chip">restic</span><span class="chip">Telegram Bot API</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>© 2026 Wahyu Ariyadi.</span>
+      <span>Built with HTML, CSS &amp; vanilla JS — no frameworks, fully static.</span>
+    </footer>
+  </main>
+
+<script src="script.js" defer></script>
+</body>
+</html>
