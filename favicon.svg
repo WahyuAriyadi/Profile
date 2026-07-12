@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="scale" x1="10" y1="50" x2="50" y2="12" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#52D9C4"/>
+      <stop offset="1" stop-color="#F2A65A"/>
+    </linearGradient>
+    <radialGradient id="spark" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#F2A65A"/>
+      <stop offset="1" stop-color="#F2A65A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="64" height="64" rx="14" fill="#0D1424"/>
+  <rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="#1E2A44" stroke-width="1"/>
+
+  <!-- breath spark -->
+  <circle cx="51" cy="14" r="7" fill="url(#spark)"/>
+
+  <!-- serpentine dragon body (spine) -->
+  <path d="M14,48 C8,40 11,30 20,28 C29,26 24,17 33,13 C38,10.5 43,12 46,16"
+        fill="none" stroke="url(#scale)" stroke-width="6"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- back spikes -->
+  <path d="M19,29 L22,22 L25,28 Z" fill="url(#scale)"/>
+  <path d="M27,22 L30,15.5 L32.5,21 Z" fill="url(#scale)"/>
+  <path d="M35,14.5 L37.5,9 L39.5,14 Z" fill="url(#scale)"/>
+
+  <!-- tail tip -->
+  <path d="M14,48 C11,49.5 8,49.5 6,48" fill="none" stroke="url(#scale)"
+        stroke-width="3" stroke-linecap="round"/>
+
+  <!-- head -->
+  <path d="M46,16 C49,14.5 52,15 54,17.5 C55.5,19.5 55,22 52.5,23
+           C50.5,23.7 48.5,22.7 47.5,20.5 C47,19 46.7,17.4 46,16 Z"
+        fill="url(#scale)"/>
+
+  <!-- horn -->
+  <path d="M51,15 L53,9.5 L55,15.5 Z" fill="url(#scale)"/>
+
+  <!-- eye -->
+  <circle cx="51.5" cy="19" r="1.4" fill="#0D1424"/>
+</svg>
