@@ -1,44 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <defs>
-    <linearGradient id="scale" x1="10" y1="50" x2="50" y2="12" gradientUnits="userSpaceOnUse">
+    <linearGradient id="scale" x1="8" y1="50" x2="52" y2="10" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#52D9C4"/>
       <stop offset="1" stop-color="#F2A65A"/>
     </linearGradient>
-    <radialGradient id="spark" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#F2A65A"/>
-      <stop offset="1" stop-color="#F2A65A" stop-opacity="0"/>
-    </radialGradient>
+    <linearGradient id="wingg" x1="6" y1="28" x2="18" y2="12" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2E9C8E"/>
+      <stop offset="1" stop-color="#4FBFA8"/>
+    </linearGradient>
   </defs>
 
-  <!-- background -->
-  <rect width="64" height="64" rx="14" fill="#0D1424"/>
-  <rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="#1E2A44" stroke-width="1"/>
+  <!-- shield / seal background -->
+  <path d="M8,9 L56,9 C56,27 53,42 32,59 C11,42 8,27 8,9 Z" fill="#0D1424"/>
+  <path d="M8,9 L56,9 C56,27 53,42 32,59 C11,42 8,27 8,9 Z"
+        fill="none" stroke="url(#scale)" stroke-width="2"/>
+  <path d="M11.5,12 L52.5,12 C52.5,28 50,41 32,55.5 C14,41 11.5,28 11.5,12 Z"
+        fill="none" stroke="#1E2A44" stroke-width="1"/>
 
-  <!-- breath spark -->
-  <circle cx="51" cy="14" r="7" fill="url(#spark)"/>
+  <!-- wing: single bat-membrane panel, kept low and away from the head -->
+  <path d="M20,28 L6,20 Q10,14 16,15 Q14,20.5 20,28 Z" fill="url(#wingg)" opacity="0.95"/>
+  <path d="M20,28 L6,20 M20,28 L16,15" fill="none" stroke="#0D1424" stroke-width="0.6" opacity="0.5"/>
 
-  <!-- serpentine dragon body (spine) -->
+  <!-- serpentine body (tapering tail to neck) -->
   <path d="M14,48 C8,40 11,30 20,28 C29,26 24,17 33,13 C38,10.5 43,12 46,16"
-        fill="none" stroke="url(#scale)" stroke-width="6"
+        fill="none" stroke="url(#scale)" stroke-width="6.5"
         stroke-linecap="round" stroke-linejoin="round"/>
-
-  <!-- back spikes -->
-  <path d="M19,29 L22,22 L25,28 Z" fill="url(#scale)"/>
-  <path d="M27,22 L30,15.5 L32.5,21 Z" fill="url(#scale)"/>
-  <path d="M35,14.5 L37.5,9 L39.5,14 Z" fill="url(#scale)"/>
-
-  <!-- tail tip -->
-  <path d="M14,48 C11,49.5 8,49.5 6,48" fill="none" stroke="url(#scale)"
+  <path d="M14,48 C11,49.7 8,49.7 6,48" fill="none" stroke="url(#scale)"
         stroke-width="3" stroke-linecap="round"/>
 
-  <!-- head -->
-  <path d="M46,16 C49,14.5 52,15 54,17.5 C55.5,19.5 55,22 52.5,23
-           C50.5,23.7 48.5,22.7 47.5,20.5 C47,19 46.7,17.4 46,16 Z"
-        fill="url(#scale)"/>
+  <!-- dorsal spikes along the full spine -->
+  <path d="M11,42.3 L14,37 L16,41.6 Z" fill="url(#scale)"/>
+  <path d="M23.7,25.3 L26.7,19.3 L28.7,24.8 Z" fill="url(#scale)"/>
+  <path d="M28.8,17.4 L31.6,11.6 L33.7,17 Z" fill="url(#scale)"/>
+  <path d="M34.7,12.5 L37.3,7.3 L39.4,12.4 Z" fill="url(#scale)"/>
+  <path d="M40.7,11.7 L43.2,7 L45.1,11.6 Z" fill="url(#scale)"/>
+
+  <!-- head: elongated snout (upper) + lower jaw, open mouth -->
+  <path d="M45,15.3 L57,12.6 L54,18 L46.5,17.3 Z" fill="url(#scale)"/>
+  <path d="M46.5,17.3 L55,20.2 L49.6,22.4 L44.3,18.3 Z" fill="url(#scale)"/>
+
+  <!-- fang -->
+  <path d="M52.6,18.3 L54.3,21.4 L51.3,20 Z" fill="#E7ECF5"/>
 
   <!-- horn -->
-  <path d="M51,15 L53,9.5 L55,15.5 Z" fill="url(#scale)"/>
+  <path d="M49.4,14.6 L51.3,8.4 L53,14.8 Z" fill="url(#scale)"/>
 
   <!-- eye -->
-  <circle cx="51.5" cy="19" r="1.4" fill="#0D1424"/>
+  <circle cx="50" cy="16.1" r="1.15" fill="#0D1424"/>
 </svg>
